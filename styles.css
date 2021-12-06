@@ -135,7 +135,20 @@ nav ul li{
   margin-top: 50px;
   margin-left: 50px;
 }
+/* About stuff */
 
+#aboutTitle{
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
+}
+#aboutContent{
+  display: grid;
+  justify-self: center;
+  margin-bottom: 50px;
+  margin-left: 150px;
+
+}
 /* portfolio stuff */
 #portolioTitle{
   display: grid;
@@ -188,20 +201,30 @@ nav ul li{
 }
 .contactText{
   color: #3466AA;
+  margin-bottom: 40px;
+}
+#contactForm{
+  align-items: center;
+  display: grid;
+  justify-items: center;
 }
 #contactForm input{
   width: 400px;
-  margin: 40px;
 }
 #contactForm button {
   align-self: center;
 }
 #description {
   width: 400px;
+  height: 300px;
+  
 }
 
 /* footer */
 footer {
   background-color: black;
   color: white;
+}
+#formBtn {
+  background-color: #82B7DC;
 }
