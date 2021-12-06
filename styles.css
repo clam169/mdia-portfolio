@@ -17,12 +17,15 @@
   color: #82B7DC;
 }
 .h1{
-  font-size: 36pt;
+  font-size: 48pt;
 }
 .h2{
-  font-size: 28pt;
+  font-size: 36pt;
 }
 .h3{
+  font-size: 28pt;
+}
+.h4{
   font-size: 20pt;
 }
 .bold{
@@ -36,13 +39,16 @@ body{
   /* display: flex; */
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 li {
   list-style: none;
 }
-
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  
+}
 
 /* Nav stuff */
 nav{
@@ -54,7 +60,8 @@ nav{
   grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-end;
   justify-content: space-between;
-  width: 1200px;
+  width: 1300px;
+  z-index: 2;
 }
 nav img{
   height: 150px;    
@@ -69,9 +76,11 @@ nav ul li{
   width: 30px;
   height: auto;
   align-self: center;
+  justify-items: center;;
 }
 #rightNav ul{
   padding-bottom: -10px;
+  display:inline-flex;
 }
 
 /* intro stuff */
@@ -98,6 +107,7 @@ nav ul li{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 100px;
+  justify-content: space-evenly;
 }
 #profileRight{
   justify-self: center;
@@ -108,7 +118,7 @@ nav ul li{
   justify-content: center;
 }
 #profilePic{
-  width: 450px;
+  width: 350px;
   height:auto;
   border-radius: 30%;
   border: 1px solid black;
@@ -125,6 +135,7 @@ nav ul li{
   margin-top: 50px;
   margin-left: 50px;
 }
+
 /* portfolio stuff */
 #portolioTitle{
   display: grid;
@@ -134,23 +145,63 @@ nav ul li{
 .portfolio-slide{
   border: 1px solid black;
 }
-
 .portImg img{
-  width: 600px;
+  width: 800px;
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 20px;
+}
+.portDesc {
+
+  grid-row: 3;
+}
+.portTitle{
+  grid-row: 1;
+  font-size: 20pt;
+  color: #3466AA;
+
+
+}
+.swiper-container{
+  border: 1px solid black;
+  padding-top: 50px;
+}
+.swiper-wrapper{
+  margin-bottom: 50px;
+
 }
 .swiper-slide{
   display: grid;
   align-items: center;
+  grid-template-rows: 3;
   justify-items: center;
 }
 
+
 /* contact stuff */
-.contact{
+#contact{
   background-color: black;
   color: white;
   display: grid;
   justify-items: center;
+  padding-bottom: 50px;
 }
 .contactText{
   color: #3466AA;
+}
+#contactForm input{
+  width: 400px;
+  margin: 40px;
+}
+#contactForm button {
+  align-self: center;
+}
+#description {
+  width: 400px;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
 }

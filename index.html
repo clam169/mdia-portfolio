@@ -20,21 +20,21 @@
       <li><a href="https://www.linkedin.com/in/jojolam990/"><img src="assets/linkedin.png"></a></li>
     </ul>
     <img src="/assets/onFigmaLogoBlue.png">
-    <ul id="rightNav" class="rajdhani h2 bold darkblue">
-      <li>Profile</li>
-      <li>Quest</li>
-      <li>Contact</li>
+    <ul id="rightNav" class="rajdhani h3 darkblue">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <div class="intro rajdhani">
-    <div id="introText" class="h2">
+    <div id="introText" class="h4">
       <h1>Hey...</h1><br/>
       <h1>It's <span style="color: white"> Jo Jo Lam</span></h1><br/>
       <h1>..here is my adventure as a <span style="color: white"> full stack developer</span></h1><br/>
     </div>
   </div>
-  <div class="profile">
-    <div id="profileTitle" class="rajdhani h1">Profile</div>
+  <div id="profile">
+    <div id="profileTitle" class="rajdhani h1 bold darkblue">Profile</div>
     <div id="profileContent">
       <div id="profileLeft">
         <div>
@@ -71,7 +71,7 @@
             </ul>
           </div>
           <div id="resume">
-            <img src="assets/resume.png">
+            <a href="assets/resume.pdf" download><img src="assets/resume.png"></a><br/>
             Resume
           </div>
 
@@ -82,34 +82,94 @@
   </div>
 
   <div class="portfolio-section" id="portfolio">
-    <span id="portolioTitle" class="h2">Portfolio</span>
+    <span id="portolioTitle" class="h1 bold rajdhani darkblue">Portfolio</span>
     <div class="portfolio-container swiper swiper-container">
       <div class="swiper-wrapper">
         <div class="portfolio-content grid swiper-slide">
           <div class="portTitle">
-            Binibin - Collaboration Project 
+            Main quest: Binibin
           </div>
           <div class="portImg">
             <img src="assets/binibin1.png">
           </div>
           <div class="portDesc p">
-            PostgreSQL ExpressJS NextJS NodeJS
-            Waste tracking app
+            <span class="lightblue">PostgreSQL | ExpressJS | NextJS | NodeJS | Figma</span> <br/>
+            Collaboration - Waste tracking app <br/>
+            September - November 2021 <br/>
+            <a href="https://binibinapp.vercel.app/">LINK</a>
           </div>
         </div>
         
         <div class="portfolio-content grid swiper-slide">
           <div class="portTitle">
-            Contendr - Collaboration Project 
+            Main quest: Contendr 
           </div>
           <div class="portImg">
             <img src="assets/contendr1.png">
           </div>
           <div class="portDesc p">
-            MongoDB ExpressJS NodeJS
-            Social media app 
+            <span class="lightblue">MongoDB | ExpressJS | NodeJS</span><br/>
+            Collaboration - Social media app <br/>
+            April 2021 <br/>
+            <a href="contendr.win">LINK</a>
           </div>
         </div>
+
+        <div class="portfolio-content grid swiper-slide">
+          <div class="portTitle">
+            Side quest: Devhouse 
+          </div>
+          <div class="portImg">
+            <img src="assets/devhouse.png">
+          </div>
+          <div class="portDesc p">
+            <span class="lightblue">Redis | TypeScript | PassportJS</span><br/>
+            Collaboration - Social media app <br/>
+            March - April 2021
+          </div>
+        </div>
+
+        <div class="portfolio-content grid swiper-slide">
+          <div class="portTitle">
+            Side quest: Connect'd 
+          </div>
+          <div class="portImg">
+            <img src="assets/connectd.png">
+          </div>
+          <div class="portDesc p">
+            <span class="lightblue">UX/UI | Figma | User Tests</span><br/>
+            Collaboration - UX/UI website redesign <br/>
+            March 2021
+          </div>
+        </div>
+
+        <div class="portfolio-content grid swiper-slide">
+          <div class="portTitle">
+            Side quest: Grayscale photo app
+          </div>
+          <div class="portImg">
+            <img src="assets/grayscale.png">
+          </div>
+          <div class="portDesc p">
+            <span class="lightblue">NodeJs</span><br/>
+            Assignment - Apply grayscale to user uploaded picture and display before and after. <br/>
+            November - December 2020
+          </div>
+        </div>
+        
+        <div class="portfolio-content grid swiper-slide">
+          <div class="portTitle">
+            Side quest: Simple console apps
+          </div>
+          <div class="portImg">
+            <img src="assets/console.png">
+          </div>
+          <div class="portDesc p">
+            <span class="lightblue">NodeJs</span><br/>
+            September - October 2020
+          </div>
+        </div>
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -117,90 +177,49 @@
     </div>
   </div>
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
-
-  
-  <!-- <div class="portfolio">
-    <span class="h1 rajdhani darkblue">Quest log</span>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="portTitle">
-            Binibin - Collaboration Project 
-          </div>
-          <div class="portImg">
-            <img src="assets/binibin1.png">
-          </div>
-          <div class="portDesc p">
-            PostgreSQL ExpressJS NextJS NodeJS
-            Waste tracking app
-          </div>
-          slide 1
-        </div>
-        <div class="swiper-slide">
-          <div class="portTitle">
-            Contendr - Collaboration Project 
-          </div>
-          <div class="portImg">
-            <img src="assets/contendr1.png">
-          </div>
-          <div class="portDesc p">
-            MongoDB ExpressJS NodeJS
-            Social media app 
-          </div>
-          slide 2
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-   
-  </div> -->
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        // cssMode: true,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
-
-  <div class="contact">
+  <div id="contact">
     <div class="contactText rajdhani midblue h1">
       Do you have a quest for me? <br>
       Send me an invite!
     </div>
-    <div id="contactInfo">
-      Github: clam169
-      LinkedIn: jojolam990
-    </div>
-    <div id="contactForm">
-      <form>
+
+    <div id="formContainer">
+      <form id="contactForm">
         <label for="name">Name:</label><br/>
         <input type="text" id="name" name="name"><br/>
         <label for="email">Email Address:</label><br/>
         <input type="text" id="email" name="email"><br/>
         <label for="description">Quest description:</label><br/>
-        <input type="text" id="description" name="description"><br/>
+        <textarea type="text" id="description" name="description"></textarea><br/>
         <button type="submit">Send Invite</button>
 
       </form>
 
     </div>
   </div>
+  <footer>
+    <div id="contactInfo">
+      Github: clam169
+      LinkedIn: jojolam990
+    </div>
+  </footer>
 </body>
 </html>
