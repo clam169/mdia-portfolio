@@ -1,0 +1,156 @@
+.rubik{
+  font-family: 'Rubik', sans-serif;
+}
+.rajdhani{
+  font-family: 'Rajdhani', sans-serif;
+}
+.kalam{
+  font-family: 'Kalam', cursive;
+}
+.darkblue{
+  color: #114084;
+}
+.midblue{
+  color: #3466AA;
+}
+.lightblue{
+  color: #82B7DC;
+}
+.h1{
+  font-size: 36pt;
+}
+.h2{
+  font-size: 28pt;
+}
+.h3{
+  font-size: 20pt;
+}
+.bold{
+  font-weight: bold;
+}
+.p{
+  font-size: 16pt;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+
+
+/* Nav stuff */
+nav{
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 1200px;
+}
+nav img{
+  height: 150px;    
+  display: inline-block;
+  justify-self: center;
+
+}
+nav ul li{
+  display: inline-block;
+}
+#leftNav img{
+  width: 30px;
+  height: auto;
+  align-self: center;
+}
+#rightNav ul{
+  padding-bottom: -10px;
+}
+
+/* intro stuff */
+.intro {
+  color: #3466AA;
+  background-color: black;
+  padding: 50px;
+  max-width: 1200px;
+}
+#introText{
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 50px;
+  padding-left: 80px;
+}
+
+/* profile stuff */
+#profileTitle{
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
+}
+#profileContent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px;
+}
+#profileRight{
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#profileLeft{
+  justify-content: center;
+}
+#profilePic{
+  width: 450px;
+  height:auto;
+  border-radius: 30%;
+  border: 1px solid black;
+}
+.ulTitle{
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.skills ul li{
+  font-size: 14pt;
+}
+#resume{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+/* portfolio stuff */
+#portolioTitle{
+  display: grid;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+.portfolio-slide{
+  border: 1px solid black;
+}
+
+.portImg img{
+  width: 600px;
+}
+.swiper-slide{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* contact stuff */
+.contact{
+  background-color: black;
+  color: white;
+  display: grid;
+  justify-items: center;
+}
+.contactText{
+  color: #3466AA;
+}

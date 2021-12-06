@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Rajdhani:wght@500;700&family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <ul id="leftNav">
+      <li><a href="https://github.com/clam169"><img src="assets/github.png"></a></li>
+      <li><a href="mailto:jojo.lam@outlook.com"><img src="assets/email.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/jojolam990/"><img src="assets/linkedin.png"></a></li>
+    </ul>
+    <img src="/assets/onFigmaLogoBlue.png">
+    <ul id="rightNav" class="rajdhani h2 bold darkblue">
+      <li>Profile</li>
+      <li>Quest</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <div class="intro rajdhani">
+    <div id="introText" class="h2">
+      <h1>Hey...</h1><br/>
+      <h1>It's <span style="color: white"> Jo Jo Lam</span></h1><br/>
+      <h1>..here is my adventure as a <span style="color: white"> full stack developer</span></h1><br/>
+    </div>
+  </div>
+  <div class="profile">
+    <div id="profileTitle" class="rajdhani h1">Profile</div>
+    <div id="profileContent">
+      <div id="profileLeft">
+        <div>
+          <span class="h2">Jo Jo Lam</span><br/>
+          Full Stacker
+        </div>
+        <img id="profilePic"src="assets/IMG-2617.JPG">
+        
+      </div>
+      <div id="profileRight">
+        <img src="assets/arrow1.png">
+        <div class="skills-resume">
+          <span class="h2 darkblue rajdhani">Skills</span>
+          <div class="p skills">
+  
+            <ul> 
+              <span class="ulTitle lightblue">Front End</span>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul> 
+              <span class="ulTitle lightblue">Back End</span>
+              <li>NodeJS</li>
+              <li>ExpressJS</li>
+              <li>TypeScript</li>
+              <li>React</li>
+            </ul>
+            <ul> 
+              <span class="ulTitle lightblue">Database</span>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div id="resume">
+            <img src="assets/resume.png">
+            Resume
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-section" id="portfolio">
+    <span id="portolioTitle" class="h2">Portfolio</span>
+    <div class="portfolio-container swiper swiper-container">
+      <div class="swiper-wrapper">
+        <div class="portfolio-content grid swiper-slide">
+          <div class="portTitle">
+            Binibin - Collaboration Project 
+          </div>
+          <div class="portImg">
+            <img src="assets/binibin1.png">
+          </div>
+          <div class="portDesc p">
+            PostgreSQL ExpressJS NextJS NodeJS
+            Waste tracking app
+          </div>
+        </div>
+        
+        <div class="portfolio-content grid swiper-slide">
+          <div class="portTitle">
+            Contendr - Collaboration Project 
+          </div>
+          <div class="portImg">
+            <img src="assets/contendr1.png">
+          </div>
+          <div class="portDesc p">
+            MongoDB ExpressJS NodeJS
+            Social media app 
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+
+
+  
+  <!-- <div class="portfolio">
+    <span class="h1 rajdhani darkblue">Quest log</span>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="portTitle">
+            Binibin - Collaboration Project 
+          </div>
+          <div class="portImg">
+            <img src="assets/binibin1.png">
+          </div>
+          <div class="portDesc p">
+            PostgreSQL ExpressJS NextJS NodeJS
+            Waste tracking app
+          </div>
+          slide 1
+        </div>
+        <div class="swiper-slide">
+          <div class="portTitle">
+            Contendr - Collaboration Project 
+          </div>
+          <div class="portImg">
+            <img src="assets/contendr1.png">
+          </div>
+          <div class="portDesc p">
+            MongoDB ExpressJS NodeJS
+            Social media app 
+          </div>
+          slide 2
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+   
+  </div> -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // cssMode: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+  <div class="contact">
+    <div class="contactText rajdhani midblue h1">
+      Do you have a quest for me? <br>
+      Send me an invite!
+    </div>
+    <div id="contactInfo">
+      Github: clam169
+      LinkedIn: jojolam990
+    </div>
+    <div id="contactForm">
+      <form>
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name"><br/>
+        <label for="email">Email Address:</label><br/>
+        <input type="text" id="email" name="email"><br/>
+        <label for="description">Quest description:</label><br/>
+        <input type="text" id="description" name="description"><br/>
+        <button type="submit">Send Invite</button>
+
+      </form>
+
+    </div>
+  </div>
+</body>
+</html>
